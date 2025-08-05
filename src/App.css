@@ -1,0 +1,83 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.stake {
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  width: 20px;
+  height: 60px;
+  display: inline-block;
+  position: relative;
+  background-color: rgb(127, 82, 82);
+  /* background-color: $cylinder-color; */
+  margin: 50px;
+}
+.stake:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 8.5px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 100px / 50px;
+  position: absolute;
+  left: -1px;
+  top: -6.5px;
+  z-index: 2;
+}
+.stake:after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 12.5px;
+  background-color: red;
+  /* background: $cylinder-color; */
+  border: 1px solid #000000;
+  border-radius: 100px / 50px;
+  position: absolute;
+  left: -1px;
+  bottom: -7.5px;
+  z-index: -1;
+}   
+.stake:hover {
+  height: 10.5;;
+}
