@@ -20,7 +20,7 @@ export default function LessonPlan() {
                     left: `calc(50% + ${x}px)`,
                     top: y,
                     ["--btn" as any]: "#22c55e"
-                    }}
+                    }} 
                     >
                 {number}
             </button>
